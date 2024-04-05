@@ -1,0 +1,17 @@
+.task-container {
+  width: 50%;
+  .task-list {
+    padding: 0;
+
+    &-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      &__text {
+        color: $secondary;
+      }
+    }
+  }
+}
