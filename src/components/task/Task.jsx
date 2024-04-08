@@ -14,17 +14,22 @@ export const Task = ({ inputRef }) => {
           <li className="task-list-item" key={i}>
             <p className="task-list-item__text">{t}</p>
             <div>
-              <button
-                className="btn"
-                onClick={() => {
-                  dispatch(updateTask(i)), inputRef.current.focus();
-                }}
-              >
-                Update
-              </button>
-              <button className="btn" onClick={(e) => dispatch(deleteTask(i))}>
-                Del
-              </button>
+              <div className="task-list-btn-container">
+                <button
+                  className="btn"
+                  onClick={() => {
+                    dispatch(updateTask(i)), inputRef.current.focus();
+                  }}
+                >
+                  Update
+                </button>
+                <button
+                  className="btn"
+                  onClick={(e) => dispatch(deleteTask(i))}
+                >
+                  Delete
+                </button>
+              </div>
             </div>
           </li>
         );

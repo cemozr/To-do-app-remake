@@ -15,6 +15,7 @@ export const TaskInput = ({ passInputRef }) => {
   return (
     <div className="input-container">
       <input
+        className="input-container__input"
         type="text"
         placeholder="What you have to do?"
         value={task}

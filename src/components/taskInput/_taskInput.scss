@@ -1,0 +1,21 @@
+.input-container {
+  width: 50%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  button {
+    margin: 0 !important;
+    border: 2px solid $primary;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &__input {
+    width: 100%;
+    border: 2px solid $primary;
+    border-radius: 0.5rem;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}

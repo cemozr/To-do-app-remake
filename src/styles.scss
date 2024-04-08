@@ -1,13 +1,16 @@
 @import "variables";
 @import "components/taskInput/taskInput";
 @import "components/taskListing/taskListing";
+@import "mediaQueries";
 
 @mixin center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+#root {
+  height: 100%;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,21 +18,29 @@
 }
 
 body {
-  @include center;
   height: 100vh;
   width: 100vw;
   font-size: 1rem;
   line-height: 1rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: $bgColor;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  overflow-x: hidden;
 }
+.btn {
+  background-color: $primary;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  width: 5rem;
 
+  &:hover {
+    background-color: $darker-primary;
+    cursor: pointer;
+  }
+}
 .main-container {
   @include center;
   flex-direction: column;
   width: 100vw;
-  height: 50vh;
+  gap: 2rem;
 }

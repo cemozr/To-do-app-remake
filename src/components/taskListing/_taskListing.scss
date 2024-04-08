@@ -1,14 +1,24 @@
 .task-container {
   width: 50%;
-  .task-list {
-    padding: 0;
 
+  border-radius: 0.5rem;
+  .task-list {
+    &-btn-container {
+      button {
+        margin: 0.1rem;
+      }
+    }
     &-item {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       list-style: none;
+      margin: 1rem 0 1rem 0;
+      border: 1px solid $primary;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      box-shadow: 0.2rem 0.2rem $darker-primary;
       &__text {
         color: $secondary;
       }
