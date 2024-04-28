@@ -16,7 +16,7 @@ const taskSlice = createSlice({
     addTask: (state) => {
       state.taskList = [...state.taskList, state.task];
       state.task = " ";
-      state.updateMode = !state.updateMode;
+      state.updateMode = false;
     },
     updateTask: (state, action) => {
       state.updateMode = true;
